@@ -1,11 +1,11 @@
 // Create a reference for the canvas
  var canvas= document.getElementById("myCanvas");
- ctx.canvas.getcontext("2d");
+ var ctx = canvas.getContext("2d");
 
 img_width = 300;
 img_height = 100;
 
-var img_image;
+var img_image="";
 
 img_x = 100;
 img_y = 100;
@@ -36,7 +36,7 @@ function my_keydown(e)
 		console.log("alphabet key");
 		}
 		
-	else{
+	     else{
 		otherkey();
 		document.getElementById("d1").innerHTML="You pressed symbol or other key";
 	}
